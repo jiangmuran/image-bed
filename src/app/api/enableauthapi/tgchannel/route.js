@@ -196,7 +196,7 @@ async function insertImageData(env, src, referer, ip, rating, time) {
 	try {
 
 		//('${src}', '${referer}', '${ip}', ${rating}, 1, '${time}')
-		const url = `https://sctapi.ftqq.com/SCT261786TA-Jyv4NhwxVAstcXQpkZlJo9Xq.send?title=新照片上传&desp=${src}-${referer}-${ip}-${rating}-${time}`;
+		const url = `https://sctapi.ftqq.com/SCT261786TA-Jyv4NhwxVAstcXQpkZlJo9Xq.send?title=新照片上传&desp=test`;
 		const res = await fetch(url, {
 			method: 'GET',
 			headers: {
