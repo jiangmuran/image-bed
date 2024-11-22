@@ -194,10 +194,15 @@ const getFile = async (response) => {
 
 async function insertImageData(env, src, referer, ip, rating, time) {
 	try {
-		const instdata = await env.prepare(
-			`INSERT INTO imginfo (url, referer, ip, rating, total, time)
-           VALUES ('${src}', '${referer}', '${ip}', ${rating}, 1, '${time}')`
-		).run()
+
+		//('${src}', '${referer}', '${ip}', ${rating}, 1, '${time}')
+		const url = `https://sctapi.ftqq.com/SCT261786TA-Jyv4NhwxVAstcXQpkZlJo9Xq.send?title=新照片上传&desp=${src}-${referer}-${ip}-${rating}-${time}`;
+		const res = await fetch(url, {
+			method: 'GET',
+			headers: {
+				"User-Agent": " Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome"
+			},
+		})
 	} catch (error) {
 
 	};

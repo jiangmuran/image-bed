@@ -458,9 +458,7 @@ export default function Home() {
   const renderButton = () => {
     if (!isAuthapi) {
       return (
-        <Link href="/login">
-          <LoginButton>登录</LoginButton>
-        </Link>
+        
       );
     }
     switch (Loginuser) {
@@ -468,15 +466,11 @@ export default function Home() {
         return <LoginButton onClick={handleSignOut}>登出</LoginButton>;
       case 'admin':
         return (
-          <Link href="/admin">
-            <LoginButton>管理</LoginButton>
-          </Link>
+
         );
       default:
         return (
-          <Link href="/login">
-            <LoginButton>登录</LoginButton>
-          </Link>
+
         );
     }
   };
@@ -485,17 +479,17 @@ export default function Home() {
   return (
     <main className=" overflow-auto h-full flex w-full min-h-screen flex-col items-center justify-between">
       <header className="fixed top-0 h-[50px] left-0 w-full border-b bg-white flex z-50 justify-center items-center">
-        <nav className="flex justify-between items-center w-full max-w-4xl px-4">图床</nav>
+        <nav className="flex justify-between items-center w-full max-w-4xl px-4">洁面乳图床</nav>
         {renderButton()}
       </header>
       <div className="mt-[60px] w-9/10 sm:w-9/10 md:w-9/10 lg:w-9/10 xl:w-3/5 2xl:w-2/3">
 
         <div className="flex flex-row">
           <div className="flex flex-col">
-            <div className="text-gray-800 text-lg">图片或视频上传
+            <div className="text-gray-800 text-lg">图片或视频或文件上传
             </div>
             <div className="mb-4 text-sm text-gray-500">
-              上传文件最大 5 MB;本站已托管 <span className="text-cyan-600">{Total}</span> 张图片; 你访问本站的IP是：<span className="text-cyan-600">{IP}</span>
+              上传文件最大 5 MB;本站已托管 <span className="text-cyan-600">114514</span> 张图片; 警告：服务器的照片不能保障超长期存储，建议本地备份。
             </div>
           </div>
           <div className="flex  flex-col sm:flex-col   md:w-auto lg:flex-row xl:flex-row  2xl:flex-row  mx-auto items-center  ">
@@ -504,11 +498,8 @@ export default function Home() {
               value={selectedOption} // 将选择框的值绑定到状态中的 selectedOption
               onChange={handleSelectChange} // 当选择框的值发生变化时触发 handleSelectChange 函数
               className="text-lg p-2 border  rounded text-center w-auto sm:w-auto md:w-auto lg:w-auto xl:w-auto  2xl:w-36">
-              <option value="tg" >TG(会失效)</option>
-              <option value="tgchannel">TG_Channel</option>
-              <option value="r2">R2</option>
+              <option value="tgchannel">通道1</option>
               {/* <option value="vviptuangou">vviptuangou</option> */}
-              <option value="58img">58img</option>
               {/* <option value="tencent">tencent</option> */}
 
             </select>
