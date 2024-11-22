@@ -457,21 +457,11 @@ export default function Home() {
 
   const renderButton = () => {
     if (!isAuthapi) {
-      return (
-        
-      );
     }
     switch (Loginuser) {
       case 'user':
         return <LoginButton onClick={handleSignOut}>登出</LoginButton>;
-      case 'admin':
-        return (
 
-        );
-      default:
-        return (
-
-        );
     }
   };
 
