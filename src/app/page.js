@@ -479,7 +479,7 @@ export default function Home() {
             <div className="text-gray-800 text-lg">图片或视频或文件上传
             </div>
             <div className="mb-4 text-sm text-gray-500">
-              上传文件最大 5 MB;本站已托管 <span className="text-cyan-600">114514</span> 张图片; 警告：服务器的照片不能保障超长期存储，建议本地备份。
+              上传文件最大 5 MB;本站已托管 <span className="text-cyan-600">114514</span> 张图片; 长期运营 欢迎各位邀请新用户 后续会添加更多内容
             </div>
           </div>
           <div className="flex  flex-col sm:flex-col   md:w-auto lg:flex-row xl:flex-row  2xl:flex-row  mx-auto items-center  ">
