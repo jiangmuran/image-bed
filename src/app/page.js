@@ -489,6 +489,16 @@ export default function Home() {
               onChange={handleSelectChange} // 当选择框的值发生变化时触发 handleSelectChange 函数
               className="text-lg p-2 border  rounded text-center w-auto sm:w-auto md:w-auto lg:w-auto xl:w-auto  2xl:w-36">
               <option value="tgchannel">通道1</option>
+              <option value="tgchannel">通道2</option>
+              <option value="tgchannel">通道3</option>
+              <option value="tgchannel">通道4</option>
+              <option value="tgchannel">通道5</option>
+              <option value="tgchannel">通道6</option>
+              <option value="tgchannel">通道7（cdn）</option>
+              <option value="tgchannel">通道8（备用接口）</option>
+              <option value="tgchannel">通道9（异地容灾）</option>
+              <option value="tgchannel">通道10（异地容灾）</option>
+              
               {/* <option value="vviptuangou">vviptuangou</option> */}
               {/* <option value="tencent">tencent</option> */}
 
